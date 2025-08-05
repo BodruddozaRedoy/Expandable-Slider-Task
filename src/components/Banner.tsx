@@ -8,7 +8,7 @@ export default function Banner() {
     const [active, setActive] = useState(1)
     const [progressKey, setProgressKey] = useState(0)
 
-    const intervalRef = useRef(null)
+    const intervalRef = useRef<number | null>(null)
 
     useEffect(() => {
         if (intervalRef.current) clearInterval(intervalRef.current)
